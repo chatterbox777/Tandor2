@@ -1,0 +1,58 @@
+.header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0 0 0;
+}
+.header__container {
+  display: block;
+}
+.header__companyName {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 50px;
+  color: #005fa3;
+}
+.header__info {
+}
+.header__info__items,
+.header__info__items a {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  color: black;
+}
+.header__info__item {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 17px;
+  margin-left: 72px;
+  list-style-type: none;
+}
+.header__info__logoPhone,
+.header__info__logoPhone a {
+  list-style-image: url(../../images/logo/phone.png);
+  text-decoration: none;
+}
+.header__info__logoClock {
+  list-style-image: url(../../images/logo/clock.png);
+}
+.header__info__logoLetter {
+  list-style-image: url(../../images/logo/letter.png);
+}
+.header__info__logoPlaceholder {
+  list-style-image: url(../../images/logo/placeholder.png);
+}
+.header__info__navigation {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-left: 28px;
+  list-style-type: none;
+}
+.header__main__info {
+}
