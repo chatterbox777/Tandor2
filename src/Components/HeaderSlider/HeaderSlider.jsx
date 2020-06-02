@@ -7,16 +7,42 @@ import Slider from "../Slider/Slider";
 
 class HeaderSlider extends React.Component {
   state = {
-    h1: "Бухгалтерские услуги в Санкт-Петербурге",
-    buttonText: "Наша презентация",
+    slides: [
+      {
+        id: 1,
+        serviceName: "Бухгалтерские услуги в Санкт-Петербурге",
+        buttonText: "Наша презентация",
+      },
+      {
+        id: 2,
+        serviceName: "Юридические услуги в Москве",
+        buttonText: "Наша презентация",
+      },
+      {
+        id: 3,
+        serviceName: "Занятие по кикбоксингу в Ярославле",
+        buttonText: "Наша презентация",
+      },
+      {
+        id: 4,
+        serviceName: "Онлайн клуб в Краснодаре = заря",
+        buttonText: "Наша презентация",
+      },
+    ],
+    isActive: 1,
   };
 
   render() {
     return (
       <div className={classList.header__slider}>
-        <img src={firstSliderImg} alt="Saint-Petersburg" />
-        <h1>{this.state.h1}</h1>
-        <button>{this.state.buttonText}</button>
+        {this.state.slides
+          .filter((el) => el.id === this.state.isActive)
+          .map((el) => (
+            <div>
+              <h1>{el.serviceName}</h1>
+              <button>{el.buttonText}</button>
+            </div>
+          ))}
         <Slider />
       </div>
     );

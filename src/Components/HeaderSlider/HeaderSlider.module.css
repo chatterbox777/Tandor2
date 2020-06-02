@@ -5,16 +5,8 @@
   left: 0px;
   top: 110px;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  background-image: url("../../images/slider/slider1.png");
   background-size: cover;
-}
-
-.header__slider img {
-  position: absolute;
-  top: 0%;
-  right: 0%;
-  height: 100%;
-  width: 100%;
 }
 
 .header__slider h1 {
