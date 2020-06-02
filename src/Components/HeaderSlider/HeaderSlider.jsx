@@ -43,7 +43,7 @@ class HeaderSlider extends React.Component {
               <button>{el.buttonText}</button>
             </div>
           ))}
-        <Slider />
+        <Slider isActive={this.state.isActive} />
       </div>
     );
   }
