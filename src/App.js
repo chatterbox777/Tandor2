@@ -3,6 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import HeaderSlider from "./Components/HeaderSlider/HeaderSlider";
+import Services from "./Components/Services/Services";
 
 class App extends React.Component {
   render() {
@@ -11,6 +12,7 @@ class App extends React.Component {
         <div className="App">
           <Header />
           <HeaderSlider />
+          <Services />
         </div>
       </BrowserRouter>
     );

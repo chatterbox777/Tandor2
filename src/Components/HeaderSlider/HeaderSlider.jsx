@@ -51,6 +51,25 @@ class HeaderSlider extends React.Component {
       isActive: id,
     });
   };
+  prevSlide = () => {
+    const slideLength = this.state.slides.length;
+    if (this.state.isActive > slideLength - slideLength + 1) {
+      this.setState({
+        ...this.state,
+        isActive: this.state.isActive - 1,
+      });
+    }
+  };
+
+  nextSlide = () => {
+    const slideLength = this.state.slides.length;
+    if (this.state.isActive < slideLength) {
+      this.setState({
+        ...this.state,
+        isActive: this.state.isActive + 1,
+      });
+    }
+  };
 
   render() {
     return (
@@ -60,13 +79,17 @@ class HeaderSlider extends React.Component {
           .map((el) => (
             <div key={el.id}>
               <h1>{el.serviceName}</h1>
-              <button>{el.buttonText}</button>
+              <button className={classList.header__slider__button}>
+                {el.buttonText}
+              </button>
             </div>
           ))}
         <Slider
           isActive={this.state.isActive}
           changeActive={this.changeActive}
           slides={this.state.slides}
+          prevSlide={this.prevSlide}
+          nextSlide={this.nextSlide}
         />
       </div>
     );

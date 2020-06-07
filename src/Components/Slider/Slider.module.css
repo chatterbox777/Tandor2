@@ -46,6 +46,9 @@
   color: white;
   opacity: 0.4;
 }
+.slider__button_left p:hover {
+  opacity: 0.6;
+}
 
 .slider__button_right p {
   margin: 0 !important;
@@ -57,4 +60,8 @@
   font-size: 20px;
   color: white;
   opacity: 0.4;
+}
+
+.slider__button_right p:hover {
+  opacity: 0.6;
 }

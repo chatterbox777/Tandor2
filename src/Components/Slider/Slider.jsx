@@ -17,15 +17,21 @@ class Slider extends React.Component {
               key={el.id}
               onClick={(e) => this.props.changeActive(e, el.id)}
               type={el.type}
-              className={el.active ? radioActive : null}
+              className={el.id === this.props.isActive ? radioActive : null}
             />
           ))}
         </div>
         <div className={classList.slider__buttons}>
-          <div className={classList.slider__button_left}>
+          <div
+            onClick={() => this.props.prevSlide()}
+            className={classList.slider__button_left}
+          >
             <p> {"<"} </p>
           </div>
-          <div className={classList.slider__button_right}>
+          <div
+            onClick={() => this.props.nextSlide()}
+            className={classList.slider__button_right}
+          >
             <p> {">"}</p>
           </div>
         </div>

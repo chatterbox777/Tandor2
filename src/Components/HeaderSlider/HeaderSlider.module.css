@@ -24,7 +24,7 @@
 
   color: #ffffff;
 }
-.header__slider button {
+.header__slider__button {
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -41,4 +41,8 @@
   /* Accent */
 
   background: #005fa3;
+}
+
+.header__slider__button:hover {
+  cursor: pointer;
 }

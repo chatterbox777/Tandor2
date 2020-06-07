@@ -1,0 +1,58 @@
+.container {
+  margin-top: 40%;
+  margin-left: 20%;
+  margin-right: 19%;
+  background-color: #ebebeb;
+  text-align: start;
+}
+
+.container__text {
+  padding-left: 30px;
+  padding-bottom: 50px;
+}
+.container__text h3 {
+  color: #bdbdbd;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+}
+.container__text h1 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main__block {
+  border: 1px solid grey;
+  width: 350px;
+  background: url("../../images/services/bg-service.png");
+  margin: 0px 0px 30px 30px;
+}
+
+.main__block:hover {
+  background-color: hotpink;
+  cursor: pointer;
+  background: rgba(0, 95, 163, 0.65) url("../../images/services/bg-service.png");
+  background-blend-mode: hard-light, multiply, normal;
+}
+
+.main__block p {
+  width: 50%;
+  text-align: start;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  color: white;
+  margin-top: 90%;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 30px;
+}
