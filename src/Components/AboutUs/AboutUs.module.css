@@ -1,0 +1,97 @@
+.container {
+  margin-top: 5%;
+  background-color: #ffffff !important;
+}
+
+.main {
+  padding-top: 5%;
+  display: flex;
+  margin-left: 22%;
+  margin-right: 18%;
+}
+
+.info {
+  width: 50%;
+  text-align: left;
+}
+.info h3 {
+  color: #bdbdbd;
+}
+.info h1 {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
+  padding: 0 !important;
+}
+.info h1 span {
+  color: #005fa3;
+}
+.info p {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  width: 445px;
+}
+.blocks {
+  margin-top: 2%;
+  margin-left: 14%;
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  height: -webkit-fill-available;
+  flex-wrap: wrap;
+}
+.block {
+  text-align: left;
+  border: 1px solid none;
+  width: 200px;
+  height: 200px;
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: #ebebeb;
+}
+
+.block__link {
+  color: #005fa3;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.block p,
+h1,
+a {
+  padding-left: 25px;
+}
+
+.block p {
+  width: 60%;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+.block h1 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.block:hover {
+  background-color: #005fa3;
+  color: white !important;
+  cursor: pointer;
+}
+
+.block:hover .block__link {
+  color: white !important;
+}
