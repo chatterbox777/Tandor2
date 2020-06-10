@@ -5,6 +5,7 @@ import Header from "./Components/Header/Header";
 import HeaderSlider from "./Components/HeaderSlider/HeaderSlider";
 import Services from "./Components/Services/Services";
 import AboutUs from "./Components/AboutUs/AboutUs";
+import Clients from "./Components/Clients/Clients";
 
 class App extends React.Component {
   render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
           <HeaderSlider />
           <Services />
           <AboutUs />
+          <Clients />
         </div>
       </BrowserRouter>
     );

@@ -1,0 +1,74 @@
+.container {
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.container__main {
+}
+.slider__radio__active {
+  opacity: 1 !important;
+}
+
+.slider__container {
+  position: unset;
+  left: unset;
+  top: unset;
+  display: unset;
+  width: unset;
+}
+.slider__container input {
+  margin-right: 35px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  user-select: none;
+  outline: none;
+  background: #ffffff;
+  opacity: 0.6;
+}
+.slider__inputs {
+  display: flex;
+}
+.slider__inputs input:hover {
+  cursor: pointer;
+}
+.slider__buttons {
+  line-height: 59px;
+  margin-left: 88%;
+  display: flex;
+  flex-direction: row;
+  margin-top: -50px;
+}
+.slider__buttons:hover {
+  cursor: pointer;
+}
+.slider__button_left p {
+  margin: 0 !important;
+  color: white;
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  background: grey;
+  font-size: 20px;
+  color: white;
+  opacity: 0.4;
+}
+.slider__button_left p:hover {
+  opacity: 0.6;
+}
+
+.slider__button_right p {
+  margin: 0 !important;
+  color: white;
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  background: grey;
+  font-size: 20px;
+  color: white;
+  opacity: 0.4;
+}
+
+.slider__button_right p:hover {
+  opacity: 0.6;
+}
