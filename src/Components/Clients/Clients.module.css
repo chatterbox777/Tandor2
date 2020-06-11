@@ -5,6 +5,12 @@
 }
 .container__main {
 }
+
+.container__slider img {
+  width: 255px;
+  height: 110px;
+}
+
 .slider__radio__active {
   opacity: 1 !important;
 }

@@ -10,14 +10,16 @@ class ClientSlider extends React.Component {
     return (
       <div className={classList.slider__container}>
         <div className={classList.slider__inputs}>
-          {this.props.slides.map((el) => (
-            <input
-              key={el.id}
-              onClick={(e) => this.props.changeActive(e, el.id)}
-              type="radio"
-              className={el.id === this.props.isActive ? radioActive : null}
-            />
-          ))}
+          {this.props.slides
+            .filter((el) => el.id)
+            .map((el) => (
+              <input
+                key={el.id}
+                onClick={(e) => this.props.changeActive(e, el.id)}
+                type="radio"
+                className={el.id === this.props.isActive ? radioActive : null}
+              />
+            ))}
         </div>
         <div className={classList.slider__buttons}>
           <div

@@ -4,8 +4,6 @@ import ClientSlider from "./ClientSlider";
 import Microsoft from "../../images/clientslider/microsoft.png";
 import Neoterra from "../../images/clientslider/neoterra.jpg";
 
-const slidesLength = 4;
-
 class Clients extends React.Component {
   state = {
     slides: [
@@ -39,6 +37,16 @@ class Clients extends React.Component {
         alt: "Microsoft",
         img: Neoterra,
       },
+      {
+        id: 7,
+        alt: "Microsoft",
+        img: Neoterra,
+      },
+      {
+        id: 8,
+        alt: "Microsoft",
+        img: Neoterra,
+      },
     ],
     isActive: 1,
     startScopeItemsId: 1,
@@ -49,13 +57,10 @@ class Clients extends React.Component {
     debugger;
     e.preventDefault();
 
-    const list = this.state.slides.map((el) => {
-      return { ...el, active: el.id === id ? true : false };
-    });
     this.setState({
       ...this.state,
-      slides: list,
       isActive: id,
+      startScopeItemsId: id,
     });
   };
   prevSlide = () => {
@@ -71,8 +76,15 @@ class Clients extends React.Component {
   };
 
   nextSlide = () => {
+    debugger;
     const slideLength = this.state.slides.length;
-    if (this.state.isActive < slideLength) {
+    if (this.state.isActive === slideLength) {
+      this.setState({
+        isActive: 1,
+        startScopeItemsId: 1,
+        endScopeItemsId: 4,
+      });
+    } else {
       this.setState({
         ...this.state,
         isActive: this.state.isActive + 1,
@@ -83,6 +95,7 @@ class Clients extends React.Component {
   };
 
   render() {
+    debugger;
     return (
       <div className={classList.container}>
         <div className={classList.container__main}>
