@@ -2,6 +2,7 @@ import React from "react";
 import classList from "./ClientSlider.module.css";
 
 const radioActive = classList.slider__radio__active;
+const standardClass = classList.standard;
 
 class ClientSlider extends React.Component {
   state = {};
@@ -17,7 +18,10 @@ class ClientSlider extends React.Component {
                 key={el.id}
                 onClick={(e) => this.props.changeActive(e, el.id)}
                 type="radio"
-                className={el.id === this.props.isActive ? radioActive : null}
+                className={
+                  el.id === this.props.isActive ? radioActive : standardClass
+                }
+                id={el.id}
               />
             ))}
         </div>

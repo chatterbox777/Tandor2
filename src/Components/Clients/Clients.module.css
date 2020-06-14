@@ -1,14 +1,37 @@
 .container {
-  margin-top: 10%;
+  margin-top: 100px;
   margin-left: 20%;
   margin-right: 20%;
 }
 .container__main {
+  text-align: left;
+}
+.container__main h3 {
+  color: #bdbdbd;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 33px;
+}
+.container__main h1 {
+  padding: 0 !important;
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 69px;
 }
 
+.container__slider img:nth-child(1) {
+  width: 255px;
+  height: 110px;
+  margin-left: 0px !important;
+}
 .container__slider img {
   width: 255px;
   height: 110px;
+  margin-left: 40px;
 }
 
 .slider__radio__active {
