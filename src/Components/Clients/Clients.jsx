@@ -61,6 +61,7 @@ class Clients extends React.Component {
       ...this.state,
       isActive: id,
       startScopeItemsId: id,
+      endScopeItemsId: id + 3,
     });
   };
   prevSlide = () => {
@@ -72,12 +73,13 @@ class Clients extends React.Component {
         startScopeItemsId: this.state.startScopeItemsId - 1,
         endScopeItemsId: this.state.endScopeItemsId - 1,
       });
+      console.log(this.state.startScopeItemsId);
+      console.log(this.state.endScopeItemsId);
     }
   };
 
   nextSlide = () => {
-    debugger;
-    const slideLength = this.state.slides.length;
+    const slideLength = this.state.slides.length - 3;
     if (this.state.isActive === slideLength) {
       this.setState({
         isActive: 1,
@@ -91,11 +93,12 @@ class Clients extends React.Component {
         startScopeItemsId: this.state.startScopeItemsId + 1,
         endScopeItemsId: this.state.endScopeItemsId + 1,
       });
+      console.log(this.state.startScopeItemsId);
+      console.log(this.state.endScopeItemsId);
     }
   };
 
   render() {
-    debugger;
     return (
       <div className={classList.container}>
         <div className={classList.container__main}>

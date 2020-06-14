@@ -11,7 +11,7 @@ class ClientSlider extends React.Component {
       <div className={classList.slider__container}>
         <div className={classList.slider__inputs}>
           {this.props.slides
-            .filter((el) => el.id)
+            .filter((el) => el.id <= 5)
             .map((el) => (
               <input
                 key={el.id}
